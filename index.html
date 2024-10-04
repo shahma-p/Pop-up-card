@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>popup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <buttom type="Submit" class="btn" onclick="openPopup()">
+      Submit
+    </buttom>
+    <div class="popup" id="popup">
+      <img src="404-tick.png">
+      <h2>ThankYou</h2>
+      <p>your details has been successfully submitted, thanks!</p>
+      <button type="Submit" onclick="closePopup()">Ok</button>
+    </div>
+  </div>
+  
+
+  <script>
+    let popup = document.getElementById("popup");
+
+    function openPopup(){
+      popup.classList.add("open-popup");
+    }
+    function closePopup(){
+      popup.classList.remove("open-popup");
+    }
+
+
+  </script>
+</body>
+</html>
